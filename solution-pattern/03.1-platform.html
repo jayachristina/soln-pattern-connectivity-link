@@ -224,7 +224,7 @@
     <li><a href="03.1-platform.html">3.2. Platform Engineer workflow</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/redhat-solution-patterns/soln-pattern-connectivity-link/edit/main/documentation/modules/ROOT/pages/03.1-platform.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/jayachristina/soln-pattern-connectivity-link/edit/main/documentation/modules/ROOT/pages/03.1-platform.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
 <article class="doc">
@@ -516,11 +516,12 @@ metadata:
   name: prod-web-dnspolicy
   namespace: ingress-gateway
 spec:
-  routingStrategy: "simple"
   targetRef:
     name: prod-web
     group: gateway.networking.k8s.io
-    kind: Gateway</code></pre>
+    kind: Gateway
+  providerRefs:
+  - name: prod-web-aws-credentials</code></pre>
 </div>
 </div>
 </li>
