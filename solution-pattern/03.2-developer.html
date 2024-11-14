@@ -371,7 +371,7 @@ spec:
 </div>
 <div class="listingblock console-input">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell script hljs" data-lang="shell script">apiVersion: kuadrant.io/v1beta2
+<pre class="highlightjs highlight"><code class="language-shell script hljs" data-lang="shell script">apiVersion: kuadrant.io/v1
 kind: AuthPolicy
 metadata:
   name: globex-mobile-gateway
@@ -393,9 +393,7 @@ spec:
             json:
               properties:
                 userid:
-                  selector: auth.identity.sub
-  routeSelectors:
-    - matches: []</code></pre>
+                  selector: auth.identity.sub</code></pre>
 </div>
 </div>
 </div>
@@ -446,7 +444,7 @@ spec:
 </div>
 <div class="listingblock console-input">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell script hljs" data-lang="shell script">apiVersion: kuadrant.io/v1beta2
+<pre class="highlightjs highlight"><code class="language-shell script hljs" data-lang="shell script">apiVersion: kuadrant.io/v1
 kind: RateLimitPolicy
 metadata:
   name: globex-mobile-gateway
